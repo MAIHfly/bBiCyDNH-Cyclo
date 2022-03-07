@@ -1,8 +1,8 @@
-import autode as ade
+lsimport autode as ade
 import numpy as np
 import os
 
-Cores = 96
+Cores = 128
 ade.Config.n_cores = Cores
 
 orca = ade.methods.ORCA()
