@@ -1,4 +1,4 @@
-lsimport autode as ade
+import autode as ade
 import numpy as np
 import os
 
