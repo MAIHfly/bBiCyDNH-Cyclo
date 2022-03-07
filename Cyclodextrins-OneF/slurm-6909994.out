@@ -1,0 +1,337 @@
++ cd /
++ cd /jet/home/maihfly/MAIHfly_Projects/bBiCyDNH-Cyclo/Cyclodextrins-OneF
++ module load orca
+++ /usr/share/lmod/lmod/libexec/lmod bash load orca
++ eval 'CMAKE_PREFIX_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh:/opt/packages/anaconda3;' export 'CMAKE_PREFIX_PATH;' 'CPLUS_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'CPLUS_INCLUDE_PATH;' 'CUDA_HOME=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh;' export 'CUDA_HOME;' 'C_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'C_INCLUDE_PATH;' 'INCLUDE=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'INCLUDE;' 'INTEL_DIR=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu;' export 'INTEL_DIR;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1\;/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/lib:1\;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/lib:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LIBRARY_PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1\;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:1;' export '__LMOD_REF_COUNT_LIBRARY_PATH;' 'LIBRARY_PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64;' export 'LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=allocations/1.0:1\;anaconda3/2020.11:1\;cuda/11.1.1:1\;openmpi/4.1.1-gcc8.3.1:1\;orca/5.0.1:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=allocations/1.0:anaconda3/2020.11:cuda/11.1.1:openmpi/4.1.1-gcc8.3.1:orca/5.0.1;' export 'LOADEDMODULES;' 'MANPATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/share/man:/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man:/opt/packages/anaconda3/man:/opt/packages/anaconda3/share/man;' export 'MANPATH;' 'MODULEPATH=/opt/modulefiles/production:/opt/modulefiles/preproduction:/opt/modulefiles/deprecated:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core;' export 'MODULEPATH;' 'OPENMPI_VERSION=4.1.1;' export 'OPENMPI_VERSION;' '__LMOD_REF_COUNT_PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1\;/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:1\;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:1\;/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:1\;/opt/packages/anaconda3/condabin:2\;/jet/home/maihfly/.local/bin:1\;/jet/home/maihfly/bin:1\;/opt/packages/allocations/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/bin:1\;/opt/packages/interact/bin:1\;/opt/puppetlabs/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/opt/packages/anaconda3/condabin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin;' export 'PATH;' 'SLURM_WHOLE=1;' export 'SLURM_WHOLE;' '__LMOD_REF_COUNT__LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:1\;/opt/modulefiles/production/anaconda3/2020.11.lua:1\;/opt/modulefiles/production/cuda/11.1.1.lua:1\;/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:1\;/opt/modulefiles/production/orca/5.0.1:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:/opt/modulefiles/production/anaconda3/2020.11.lua:/opt/modulefiles/production/cuda/11.1.1.lua:/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:/opt/modulefiles/production/orca/5.0.1;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXthbGxvY2F0aW9ucz17WyJmbiJdPSIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24vYWxsb2NhdGlvbnMvMS4wLmx1YSIsWyJmdWxsTmFtZSJdPSJhbGxvY2F0aW9ucy8xLjAiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhbGxvY2F0aW9ucyIsfSxhbmFjb25kYTM9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL2FuYWNvbmRhMy8yMDIwLjExLmx1YSIsWyJmdWxsTmFtZSJdPSJhbmFjb25k;' export '_ModuleTable001_;' '_ModuleTable002_=YTMvMjAyMC4xMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImFuYWNvbmRhMyIsfSxjdWRhPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9jdWRhLzExLjEuMS5sdWEiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMS4xLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0yLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjdWRhLzExLjEuMSIsfSxvcGVubXBpPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9vcGVubXBpLzQuMS4xLWdjYzguMy4xIixbImZ1bGxOYW1lIl09Im9wZW5tcGkvNC4xLjEtZ2NjOC4zLjEi;' export '_ModuleTable002_;' '_ModuleTable003_=LFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJvcGVubXBpLzQuMS4xLWdjYzguMy4xIix9LG9yY2E9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL29yY2EvNS4wLjEiLFsiZnVsbE5hbWUiXT0ib3JjYS81LjAuMSIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09Im9yY2EiLH0sfSxtcGF0aEE9eyIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL3ByZXByb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQiLCIvdXNyL3NoYXJlL21v;' export '_ModuleTable003_;' '_ModuleTable004_=ZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uOi9vcHQvbW9kdWxlZmlsZXMvcHJlcHJvZHVjdGlvbjovb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQ6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIix9;' export '_ModuleTable004_;' '_ModuleTable_Sz_=4;' export '_ModuleTable_Sz_;'
+++ CMAKE_PREFIX_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh:/opt/packages/anaconda3
+++ export CMAKE_PREFIX_PATH
+++ CPLUS_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export CPLUS_INCLUDE_PATH
+++ CUDA_HOME=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh
+++ export CUDA_HOME
+++ C_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export C_INCLUDE_PATH
+++ INCLUDE=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export INCLUDE
+++ INTEL_DIR=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu
+++ export INTEL_DIR
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1;/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/lib:1;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/lib:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LIBRARY_PATH='/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:1'
+++ export __LMOD_REF_COUNT_LIBRARY_PATH
+++ LIBRARY_PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64
+++ export LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='allocations/1.0:1;anaconda3/2020.11:1;cuda/11.1.1:1;openmpi/4.1.1-gcc8.3.1:1;orca/5.0.1:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=allocations/1.0:anaconda3/2020.11:cuda/11.1.1:openmpi/4.1.1-gcc8.3.1:orca/5.0.1
+++ export LOADEDMODULES
+++ MANPATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/share/man:/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man:/opt/packages/anaconda3/man:/opt/packages/anaconda3/share/man
+++ export MANPATH
+++ MODULEPATH=/opt/modulefiles/production:/opt/modulefiles/preproduction:/opt/modulefiles/deprecated:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+++ export MODULEPATH
+++ OPENMPI_VERSION=4.1.1
+++ export OPENMPI_VERSION
+++ __LMOD_REF_COUNT_PATH='/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1;/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:1;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:1;/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:1;/opt/packages/anaconda3/condabin:2;/jet/home/maihfly/.local/bin:1;/jet/home/maihfly/bin:1;/opt/packages/allocations/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/bin:1;/opt/packages/interact/bin:1;/opt/puppetlabs/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/opt/packages/anaconda3/condabin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export PATH
+++ SLURM_WHOLE=1
+++ export SLURM_WHOLE
+++ __LMOD_REF_COUNT__LMFILES_='/opt/modulefiles/production/allocations/1.0.lua:1;/opt/modulefiles/production/anaconda3/2020.11.lua:1;/opt/modulefiles/production/cuda/11.1.1.lua:1;/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:1;/opt/modulefiles/production/orca/5.0.1:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:/opt/modulefiles/production/anaconda3/2020.11.lua:/opt/modulefiles/production/cuda/11.1.1.lua:/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:/opt/modulefiles/production/orca/5.0.1
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXthbGxvY2F0aW9ucz17WyJmbiJdPSIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24vYWxsb2NhdGlvbnMvMS4wLmx1YSIsWyJmdWxsTmFtZSJdPSJhbGxvY2F0aW9ucy8xLjAiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhbGxvY2F0aW9ucyIsfSxhbmFjb25kYTM9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL2FuYWNvbmRhMy8yMDIwLjExLmx1YSIsWyJmdWxsTmFtZSJdPSJhbmFjb25k
+++ export _ModuleTable001_
+++ _ModuleTable002_=YTMvMjAyMC4xMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImFuYWNvbmRhMyIsfSxjdWRhPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9jdWRhLzExLjEuMS5sdWEiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMS4xLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0yLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjdWRhLzExLjEuMSIsfSxvcGVubXBpPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9vcGVubXBpLzQuMS4xLWdjYzguMy4xIixbImZ1bGxOYW1lIl09Im9wZW5tcGkvNC4xLjEtZ2NjOC4zLjEi
+++ export _ModuleTable002_
+++ _ModuleTable003_=LFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJvcGVubXBpLzQuMS4xLWdjYzguMy4xIix9LG9yY2E9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL29yY2EvNS4wLjEiLFsiZnVsbE5hbWUiXT0ib3JjYS81LjAuMSIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09Im9yY2EiLH0sfSxtcGF0aEE9eyIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL3ByZXByb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQiLCIvdXNyL3NoYXJlL21v
+++ export _ModuleTable003_
+++ _ModuleTable004_=ZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uOi9vcHQvbW9kdWxlZmlsZXMvcHJlcHJvZHVjdGlvbjovb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQ6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIix9
+++ export _ModuleTable004_
+++ _ModuleTable_Sz_=4
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ ret=0
++ /usr/share/lmod/8.2.7/libexec/log_modules load orca
++ return 0
++ module load openmpi/4.1.1-gcc8.3.1
+++ /usr/share/lmod/lmod/libexec/lmod bash load openmpi/4.1.1-gcc8.3.1
++ eval 'CMAKE_PREFIX_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh:/opt/packages/anaconda3;' export 'CMAKE_PREFIX_PATH;' 'CPLUS_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'CPLUS_INCLUDE_PATH;' 'CUDA_HOME=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh;' export 'CUDA_HOME;' 'C_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'C_INCLUDE_PATH;' 'INCLUDE=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'INCLUDE;' 'INTEL_DIR=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu;' export 'INTEL_DIR;' '__LMOD_REF_COUNT_LD_LIBRARY_PATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/lib:1\;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:1\;/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1;' export '__LMOD_REF_COUNT_LD_LIBRARY_PATH;' 'LD_LIBRARY_PATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/lib:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411;' export 'LD_LIBRARY_PATH;' '__LMOD_REF_COUNT_LIBRARY_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:1\;/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1;' export '__LMOD_REF_COUNT_LIBRARY_PATH;' 'LIBRARY_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411;' export 'LIBRARY_PATH;' '__LMOD_REF_COUNT_LOADEDMODULES=allocations/1.0:1\;anaconda3/2020.11:1\;orca/5.0.1:1\;cuda/11.1.1:1\;openmpi/4.1.1-gcc8.3.1:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=allocations/1.0:anaconda3/2020.11:orca/5.0.1:cuda/11.1.1:openmpi/4.1.1-gcc8.3.1;' export 'LOADEDMODULES;' 'MANPATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/share/man:/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man:/opt/packages/anaconda3/man:/opt/packages/anaconda3/share/man;' export 'MANPATH;' 'MODULEPATH=/opt/modulefiles/production:/opt/modulefiles/preproduction:/opt/modulefiles/deprecated:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core;' export 'MODULEPATH;' 'OPENMPI_VERSION=4.1.1;' export 'OPENMPI_VERSION;' '__LMOD_REF_COUNT_PATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:1\;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:1\;/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1\;/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:1\;/opt/packages/anaconda3/condabin:2\;/jet/home/maihfly/.local/bin:1\;/jet/home/maihfly/bin:1\;/opt/packages/allocations/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/bin:1\;/opt/packages/interact/bin:1\;/opt/puppetlabs/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/opt/packages/anaconda3/condabin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin;' export 'PATH;' 'SLURM_WHOLE=1;' export 'SLURM_WHOLE;' '__LMOD_REF_COUNT__LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:1\;/opt/modulefiles/production/anaconda3/2020.11.lua:1\;/opt/modulefiles/production/orca/5.0.1:1\;/opt/modulefiles/production/cuda/11.1.1.lua:1\;/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:/opt/modulefiles/production/anaconda3/2020.11.lua:/opt/modulefiles/production/orca/5.0.1:/opt/modulefiles/production/cuda/11.1.1.lua:/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXthbGxvY2F0aW9ucz17WyJmbiJdPSIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24vYWxsb2NhdGlvbnMvMS4wLmx1YSIsWyJmdWxsTmFtZSJdPSJhbGxvY2F0aW9ucy8xLjAiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhbGxvY2F0aW9ucyIsfSxhbmFjb25kYTM9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL2FuYWNvbmRhMy8yMDIwLjExLmx1YSIsWyJmdWxsTmFtZSJdPSJhbmFjb25k;' export '_ModuleTable001_;' '_ModuleTable002_=YTMvMjAyMC4xMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImFuYWNvbmRhMyIsfSxjdWRhPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9jdWRhLzExLjEuMS5sdWEiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMS4xLjEiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjdWRhLzExLjEuMSIsfSxvcGVubXBpPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9vcGVubXBpLzQuMS4xLWdjYzguMy4xIixbImZ1bGxOYW1lIl09Im9wZW5tcGkvNC4xLjEtZ2NjOC4zLjEi;' export '_ModuleTable002_;' '_ModuleTable003_=LFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJvcGVubXBpLzQuMS4xLWdjYzguMy4xIix9LG9yY2E9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL29yY2EvNS4wLjEiLFsiZnVsbE5hbWUiXT0ib3JjYS81LjAuMSIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09Im9yY2EiLH0sfSxtcGF0aEE9eyIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL3ByZXByb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQiLCIvdXNyL3NoYXJlL21v;' export '_ModuleTable003_;' '_ModuleTable004_=ZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uOi9vcHQvbW9kdWxlZmlsZXMvcHJlcHJvZHVjdGlvbjovb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQ6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIix9;' export '_ModuleTable004_;' '_ModuleTable_Sz_=4;' export '_ModuleTable_Sz_;'
+++ CMAKE_PREFIX_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh:/opt/packages/anaconda3
+++ export CMAKE_PREFIX_PATH
+++ CPLUS_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export CPLUS_INCLUDE_PATH
+++ CUDA_HOME=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh
+++ export CUDA_HOME
+++ C_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export C_INCLUDE_PATH
+++ INCLUDE=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export INCLUDE
+++ INTEL_DIR=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu
+++ export INTEL_DIR
+++ __LMOD_REF_COUNT_LD_LIBRARY_PATH='/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/lib:1;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:1;/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1'
+++ export __LMOD_REF_COUNT_LD_LIBRARY_PATH
+++ LD_LIBRARY_PATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/lib:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411
+++ export LD_LIBRARY_PATH
+++ __LMOD_REF_COUNT_LIBRARY_PATH='/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:1;/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1'
+++ export __LMOD_REF_COUNT_LIBRARY_PATH
+++ LIBRARY_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/lib64:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411
+++ export LIBRARY_PATH
+++ __LMOD_REF_COUNT_LOADEDMODULES='allocations/1.0:1;anaconda3/2020.11:1;orca/5.0.1:1;cuda/11.1.1:1;openmpi/4.1.1-gcc8.3.1:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=allocations/1.0:anaconda3/2020.11:orca/5.0.1:cuda/11.1.1:openmpi/4.1.1-gcc8.3.1
+++ export LOADEDMODULES
+++ MANPATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/share/man:/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man:/opt/packages/anaconda3/man:/opt/packages/anaconda3/share/man
+++ export MANPATH
+++ MODULEPATH=/opt/modulefiles/production:/opt/modulefiles/preproduction:/opt/modulefiles/deprecated:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+++ export MODULEPATH
+++ OPENMPI_VERSION=4.1.1
+++ export OPENMPI_VERSION
+++ __LMOD_REF_COUNT_PATH='/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:1;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:1;/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1;/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:1;/opt/packages/anaconda3/condabin:2;/jet/home/maihfly/.local/bin:1;/jet/home/maihfly/bin:1;/opt/packages/allocations/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/bin:1;/opt/packages/interact/bin:1;/opt/puppetlabs/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/opt/packages/anaconda3/condabin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export PATH
+++ SLURM_WHOLE=1
+++ export SLURM_WHOLE
+++ __LMOD_REF_COUNT__LMFILES_='/opt/modulefiles/production/allocations/1.0.lua:1;/opt/modulefiles/production/anaconda3/2020.11.lua:1;/opt/modulefiles/production/orca/5.0.1:1;/opt/modulefiles/production/cuda/11.1.1.lua:1;/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:/opt/modulefiles/production/anaconda3/2020.11.lua:/opt/modulefiles/production/orca/5.0.1:/opt/modulefiles/production/cuda/11.1.1.lua:/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXthbGxvY2F0aW9ucz17WyJmbiJdPSIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24vYWxsb2NhdGlvbnMvMS4wLmx1YSIsWyJmdWxsTmFtZSJdPSJhbGxvY2F0aW9ucy8xLjAiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhbGxvY2F0aW9ucyIsfSxhbmFjb25kYTM9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL2FuYWNvbmRhMy8yMDIwLjExLmx1YSIsWyJmdWxsTmFtZSJdPSJhbmFjb25k
+++ export _ModuleTable001_
+++ _ModuleTable002_=YTMvMjAyMC4xMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImFuYWNvbmRhMyIsfSxjdWRhPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9jdWRhLzExLjEuMS5sdWEiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMS4xLjEiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjdWRhLzExLjEuMSIsfSxvcGVubXBpPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9vcGVubXBpLzQuMS4xLWdjYzguMy4xIixbImZ1bGxOYW1lIl09Im9wZW5tcGkvNC4xLjEtZ2NjOC4zLjEi
+++ export _ModuleTable002_
+++ _ModuleTable003_=LFsibG9hZE9yZGVyIl09NSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJvcGVubXBpLzQuMS4xLWdjYzguMy4xIix9LG9yY2E9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL29yY2EvNS4wLjEiLFsiZnVsbE5hbWUiXT0ib3JjYS81LjAuMSIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09Im9yY2EiLH0sfSxtcGF0aEE9eyIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL3ByZXByb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQiLCIvdXNyL3NoYXJlL21v
+++ export _ModuleTable003_
+++ _ModuleTable004_=ZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uOi9vcHQvbW9kdWxlZmlsZXMvcHJlcHJvZHVjdGlvbjovb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQ6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIix9
+++ export _ModuleTable004_
+++ _ModuleTable_Sz_=4
+++ export _ModuleTable_Sz_
+++ : -s sh
++ eval
++ ret=0
++ /usr/share/lmod/8.2.7/libexec/log_modules load openmpi/4.1.1-gcc8.3.1
++ return 0
++ module load anaconda3
+++ /usr/share/lmod/lmod/libexec/lmod bash load anaconda3
++ eval 'ACLOCAL_PATH=/opt/packages/anaconda3/share/aclocal;' export 'ACLOCAL_PATH;' 'CMAKE_PREFIX_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh:/opt/packages/anaconda3;' export 'CMAKE_PREFIX_PATH;' 'CONDA_PKGS_DIRS=\$HOME/.conda/pkgs/;' export 'CONDA_PKGS_DIRS;' 'CPLUS_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'CPLUS_INCLUDE_PATH;' 'C_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'C_INCLUDE_PATH;' 'INCLUDE=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include;' export 'INCLUDE;' '__LMOD_REF_COUNT_LOADEDMODULES=allocations/1.0:1\;orca/5.0.1:1\;cuda/11.1.1:1\;openmpi/4.1.1-gcc8.3.1:1\;anaconda3/2020.11:1;' export '__LMOD_REF_COUNT_LOADEDMODULES;' 'LOADEDMODULES=allocations/1.0:orca/5.0.1:cuda/11.1.1:openmpi/4.1.1-gcc8.3.1:anaconda3/2020.11;' export 'LOADEDMODULES;' 'MANPATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/share/man:/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man:/opt/packages/anaconda3/man:/opt/packages/anaconda3/share/man;' export 'MANPATH;' 'MODULEPATH=/opt/modulefiles/production:/opt/modulefiles/preproduction:/opt/modulefiles/deprecated:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core;' export 'MODULEPATH;' '__LMOD_REF_COUNT_PATH=/opt/packages/anaconda3/bin:1\;/opt/packages/anaconda3/condabin:2\;/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:1\;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:1\;/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1\;/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:1\;/jet/home/maihfly/.local/bin:1\;/jet/home/maihfly/bin:1\;/opt/packages/allocations/bin:1\;/usr/local/bin:1\;/usr/bin:1\;/usr/local/sbin:1\;/usr/sbin:1\;/bin:1\;/opt/packages/interact/bin:1\;/opt/puppetlabs/bin:1;' export '__LMOD_REF_COUNT_PATH;' 'PATH=/opt/packages/anaconda3/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin;' export 'PATH;' 'PKG_CONFIG_PATH=/opt/packages/anaconda3/lib/pkgconfig;' export 'PKG_CONFIG_PATH;' '__LMOD_REF_COUNT__LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:1\;/opt/modulefiles/production/orca/5.0.1:1\;/opt/modulefiles/production/cuda/11.1.1.lua:1\;/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:1\;/opt/modulefiles/production/anaconda3/2020.11.lua:1;' export '__LMOD_REF_COUNT__LMFILES_;' '_LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:/opt/modulefiles/production/orca/5.0.1:/opt/modulefiles/production/cuda/11.1.1.lua:/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:/opt/modulefiles/production/anaconda3/2020.11.lua;' export '_LMFILES_;' '_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXthbGxvY2F0aW9ucz17WyJmbiJdPSIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24vYWxsb2NhdGlvbnMvMS4wLmx1YSIsWyJmdWxsTmFtZSJdPSJhbGxvY2F0aW9ucy8xLjAiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhbGxvY2F0aW9ucyIsfSxhbmFjb25kYTM9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL2FuYWNvbmRhMy8yMDIwLjExLmx1YSIsWyJmdWxsTmFtZSJdPSJhbmFjb25k;' export '_ModuleTable001_;' '_ModuleTable002_=YTMvMjAyMC4xMSIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImFuYWNvbmRhMyIsfSxjdWRhPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9jdWRhLzExLjEuMS5sdWEiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMS4xLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjdWRhLzExLjEuMSIsfSxvcGVubXBpPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9vcGVubXBpLzQuMS4xLWdjYzguMy4xIixbImZ1bGxOYW1lIl09Im9wZW5tcGkvNC4xLjEtZ2NjOC4zLjEi;' export '_ModuleTable002_;' '_ModuleTable003_=LFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJvcGVubXBpLzQuMS4xLWdjYzguMy4xIix9LG9yY2E9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL29yY2EvNS4wLjEiLFsiZnVsbE5hbWUiXT0ib3JjYS81LjAuMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09Im9yY2EiLH0sfSxtcGF0aEE9eyIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL3ByZXByb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQiLCIvdXNyL3NoYXJlL21v;' export '_ModuleTable003_;' '_ModuleTable004_=ZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uOi9vcHQvbW9kdWxlZmlsZXMvcHJlcHJvZHVjdGlvbjovb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQ6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIix9;' export '_ModuleTable004_;' '_ModuleTable_Sz_=4;' export '_ModuleTable_Sz_;' '__LMOD_STACK_CONDA_PKGS_DIRS=JEhPTUUvLmNvbmRhL3BrZ3Mv;' export '__LMOD_STACK_CONDA_PKGS_DIRS;' conda 'deactivate;' source '/opt/packages/anaconda3/etc/profile.d/conda.sh;' conda 'activate;'
+++ ACLOCAL_PATH=/opt/packages/anaconda3/share/aclocal
+++ export ACLOCAL_PATH
+++ CMAKE_PREFIX_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh:/opt/packages/anaconda3
+++ export CMAKE_PREFIX_PATH
+++ CONDA_PKGS_DIRS='$HOME/.conda/pkgs/'
+++ export CONDA_PKGS_DIRS
+++ CPLUS_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export CPLUS_INCLUDE_PATH
+++ C_INCLUDE_PATH=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export C_INCLUDE_PATH
+++ INCLUDE=/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/include:/opt/packages/anaconda3/include
+++ export INCLUDE
+++ __LMOD_REF_COUNT_LOADEDMODULES='allocations/1.0:1;orca/5.0.1:1;cuda/11.1.1:1;openmpi/4.1.1-gcc8.3.1:1;anaconda3/2020.11:1'
+++ export __LMOD_REF_COUNT_LOADEDMODULES
+++ LOADEDMODULES=allocations/1.0:orca/5.0.1:cuda/11.1.1:openmpi/4.1.1-gcc8.3.1:anaconda3/2020.11
+++ export LOADEDMODULES
+++ MANPATH=/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/share/man:/usr/share/lmod/lmod/share/man::/opt/puppetlabs/puppet/share/man:/opt/packages/anaconda3/man:/opt/packages/anaconda3/share/man
+++ export MANPATH
+++ MODULEPATH=/opt/modulefiles/production:/opt/modulefiles/preproduction:/opt/modulefiles/deprecated:/usr/share/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+++ export MODULEPATH
+++ __LMOD_REF_COUNT_PATH='/opt/packages/anaconda3/bin:1;/opt/packages/anaconda3/condabin:2;/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:1;/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:1;/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:1;/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:1;/jet/home/maihfly/.local/bin:1;/jet/home/maihfly/bin:1;/opt/packages/allocations/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/bin:1;/opt/packages/interact/bin:1;/opt/puppetlabs/bin:1'
+++ export __LMOD_REF_COUNT_PATH
+++ PATH=/opt/packages/anaconda3/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export PATH
+++ PKG_CONFIG_PATH=/opt/packages/anaconda3/lib/pkgconfig
+++ export PKG_CONFIG_PATH
+++ __LMOD_REF_COUNT__LMFILES_='/opt/modulefiles/production/allocations/1.0.lua:1;/opt/modulefiles/production/orca/5.0.1:1;/opt/modulefiles/production/cuda/11.1.1.lua:1;/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:1;/opt/modulefiles/production/anaconda3/2020.11.lua:1'
+++ export __LMOD_REF_COUNT__LMFILES_
+++ _LMFILES_=/opt/modulefiles/production/allocations/1.0.lua:/opt/modulefiles/production/orca/5.0.1:/opt/modulefiles/production/cuda/11.1.1.lua:/opt/modulefiles/production/openmpi/4.1.1-gcc8.3.1:/opt/modulefiles/production/anaconda3/2020.11.lua
+++ export _LMFILES_
+++ _ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXt9LG1UPXthbGxvY2F0aW9ucz17WyJmbiJdPSIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24vYWxsb2NhdGlvbnMvMS4wLmx1YSIsWyJmdWxsTmFtZSJdPSJhbGxvY2F0aW9ucy8xLjAiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJhbGxvY2F0aW9ucyIsfSxhbmFjb25kYTM9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL2FuYWNvbmRhMy8yMDIwLjExLmx1YSIsWyJmdWxsTmFtZSJdPSJhbmFjb25k
+++ export _ModuleTable001_
+++ _ModuleTable002_=YTMvMjAyMC4xMSIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImFuYWNvbmRhMyIsfSxjdWRhPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9jdWRhLzExLjEuMS5sdWEiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMS4xLjEiLFsibG9hZE9yZGVyIl09Myxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0xLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJjdWRhLzExLjEuMSIsfSxvcGVubXBpPXtbImZuIl09Ii9vcHQvbW9kdWxlZmlsZXMvcHJvZHVjdGlvbi9vcGVubXBpLzQuMS4xLWdjYzguMy4xIixbImZ1bGxOYW1lIl09Im9wZW5tcGkvNC4xLjEtZ2NjOC4zLjEi
+++ export _ModuleTable002_
+++ _ModuleTable003_=LFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJvcGVubXBpLzQuMS4xLWdjYzguMy4xIix9LG9yY2E9e1siZm4iXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uL29yY2EvNS4wLjEiLFsiZnVsbE5hbWUiXT0ib3JjYS81LjAuMSIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09Im9yY2EiLH0sfSxtcGF0aEE9eyIvb3B0L21vZHVsZWZpbGVzL3Byb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL3ByZXByb2R1Y3Rpb24iLCIvb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQiLCIvdXNyL3NoYXJlL21v
+++ export _ModuleTable003_
+++ _ModuleTable004_=ZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0sWyJzeXN0ZW1CYXNlTVBBVEgiXT0iL29wdC9tb2R1bGVmaWxlcy9wcm9kdWN0aW9uOi9vcHQvbW9kdWxlZmlsZXMvcHJlcHJvZHVjdGlvbjovb3B0L21vZHVsZWZpbGVzL2RlcHJlY2F0ZWQ6L3Vzci9zaGFyZS9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIix9
+++ export _ModuleTable004_
+++ _ModuleTable_Sz_=4
+++ export _ModuleTable_Sz_
+++ __LMOD_STACK_CONDA_PKGS_DIRS=JEhPTUUvLmNvbmRhL3BrZ3Mv
+++ export __LMOD_STACK_CONDA_PKGS_DIRS
+++ conda deactivate
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda deactivate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+++ source /opt/packages/anaconda3/etc/profile.d/conda.sh
++++ export CONDA_EXE=/opt/packages/anaconda3/bin/conda
++++ CONDA_EXE=/opt/packages/anaconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/packages/anaconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/packages/anaconda3/bin/python
++++ '[' -z x ']'
+++ conda activate
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate
++++ __add_sys_prefix_to_path
++++ '[' -n '' ']'
+++++ dirname /opt/packages/anaconda3/bin/conda
++++ SYSP=/opt/packages/anaconda3/bin
+++++ dirname /opt/packages/anaconda3/bin
++++ SYSP=/opt/packages/anaconda3
++++ '[' -n '' ']'
++++ PATH=/opt/packages/anaconda3/bin:/opt/packages/anaconda3/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
++++ export PATH
++++ /opt/packages/anaconda3/bin/conda shell.posix activate
+++ ask_conda='export PATH='\''/opt/packages/anaconda3/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+unset CONDA_PREFIX_1
+PS1='\''(base) '\''
+export CONDA_PREFIX='\''/opt/packages/anaconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/packages/anaconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/packages/anaconda3/bin/python'\'''
+++ eval 'export PATH='\''/opt/packages/anaconda3/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+unset CONDA_PREFIX_1
+PS1='\''(base) '\''
+export CONDA_PREFIX='\''/opt/packages/anaconda3'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''base'\''
+export CONDA_PROMPT_MODIFIER='\''(base) '\''
+export CONDA_EXE='\''/opt/packages/anaconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/packages/anaconda3/bin/python'\'''
++++ export PATH=/opt/packages/anaconda3/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
++++ PATH=/opt/packages/anaconda3/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
++++ unset CONDA_PREFIX_1
++++ PS1='(base) '
++++ export CONDA_PREFIX=/opt/packages/anaconda3
++++ CONDA_PREFIX=/opt/packages/anaconda3
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=base
++++ CONDA_DEFAULT_ENV=base
++++ export 'CONDA_PROMPT_MODIFIER=(base) '
++++ CONDA_PROMPT_MODIFIER='(base) '
++++ export CONDA_EXE=/opt/packages/anaconda3/bin/conda
++++ CONDA_EXE=/opt/packages/anaconda3/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/opt/packages/anaconda3/bin/python
++++ CONDA_PYTHON_EXE=/opt/packages/anaconda3/bin/python
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ : -s sh
++ eval
++ ret=0
++ /usr/share/lmod/8.2.7/libexec/log_modules load anaconda3
++ return 0
++ conda activate Cyclodextrins-Env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate Cyclodextrins-Env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1='(base) '
+++ __conda_exe shell.posix activate Cyclodextrins-Env
+++ __add_sys_prefix_to_path
+++ '[' -n '' ']'
++++ dirname /opt/packages/anaconda3/bin/conda
+++ SYSP=/opt/packages/anaconda3/bin
++++ dirname /opt/packages/anaconda3/bin
+++ SYSP=/opt/packages/anaconda3
+++ '[' -n '' ']'
+++ PATH=/opt/packages/anaconda3/bin:/opt/packages/anaconda3/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export PATH
+++ /opt/packages/anaconda3/bin/conda shell.posix activate Cyclodextrins-Env
++ ask_conda='PS1='\''(Cyclodextrins-Env) '\''
+export PATH='\''/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_PREFIX='\''/jet/home/maihfly/.conda/envs/Cyclodextrins-Env'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''Cyclodextrins-Env'\''
+export CONDA_PROMPT_MODIFIER='\''(Cyclodextrins-Env) '\''
+export CONDA_EXE='\''/opt/packages/anaconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/packages/anaconda3/bin/python'\''
+export CONDA_PREFIX_1='\''/opt/packages/anaconda3'\'''
++ eval 'PS1='\''(Cyclodextrins-Env) '\''
+export PATH='\''/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin'\''
+export CONDA_PREFIX='\''/jet/home/maihfly/.conda/envs/Cyclodextrins-Env'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''Cyclodextrins-Env'\''
+export CONDA_PROMPT_MODIFIER='\''(Cyclodextrins-Env) '\''
+export CONDA_EXE='\''/opt/packages/anaconda3/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/opt/packages/anaconda3/bin/python'\''
+export CONDA_PREFIX_1='\''/opt/packages/anaconda3'\'''
+++ PS1='(Cyclodextrins-Env) '
+++ export PATH=/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ PATH=/jet/home/maihfly/.conda/envs/Cyclodextrins-Env/bin:/opt/packages/anaconda3/condabin:/opt/packages/openmpi/gcc/4.1.1-gcc8.3.1-cpu/bin:/jet/packages/spack/opt/spack/linux-centos8-zen/gcc-8.3.1/cuda-11.1.1-a6ajxenobex5bvpejykhtnfut4arfpwh/bin:/opt/packages/orca/orca_5_0_1_linux_x86-64_shared_openmpi411:/opt/packages/anaconda3/bin:/jet/home/maihfly/.local/bin:/jet/home/maihfly/bin:/opt/packages/allocations/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/bin:/opt/packages/interact/bin:/opt/puppetlabs/bin
+++ export CONDA_PREFIX=/jet/home/maihfly/.conda/envs/Cyclodextrins-Env
+++ CONDA_PREFIX=/jet/home/maihfly/.conda/envs/Cyclodextrins-Env
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=Cyclodextrins-Env
+++ CONDA_DEFAULT_ENV=Cyclodextrins-Env
+++ export 'CONDA_PROMPT_MODIFIER=(Cyclodextrins-Env) '
+++ CONDA_PROMPT_MODIFIER='(Cyclodextrins-Env) '
+++ export CONDA_EXE=/opt/packages/anaconda3/bin/conda
+++ CONDA_EXE=/opt/packages/anaconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/opt/packages/anaconda3/bin/python
+++ CONDA_PYTHON_EXE=/opt/packages/anaconda3/bin/python
+++ export CONDA_PREFIX_1=/opt/packages/anaconda3
+++ CONDA_PREFIX_1=/opt/packages/anaconda3
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python OneFile.py
+bBiCyDNH_0_1_HCCCCCCOOOOOHHHHHHHHHHCCCCCCOOOOHHHHHHHHCCCCCCOOOOHHHHHHHCCCCCCOOOOOHHHHHHHHHHCCCCCCOOOOOHHHHHHHHHHC_none
+bBiCyDNH2_1_1_HCCCCCCOOOOOHHHHHHHHHHCCCCCCOOOOHHHHHHHHCCCCCCOOOOHHHHHHHCCCCCCOOOOOHHHHHHHHHHCCCCCCOOOOOHHHHHHHHHHC_none
+p-fluorophenol_0_1_CCCCCCOFHHHHH_acetonitrile
+p-fluorophenolate_-1_1_CCCCCCOFHHHH_acetonitrile
+molecules have been optimised with XTB
+molecules have been optimised with ORCA
+Calculations have been carried out
+calculations have been output to files
+slurmstepd: error: *** JOB 6909994 ON e001 CANCELLED AT 2022-03-04T02:58:03 DUE TO TIME LIMIT ***
