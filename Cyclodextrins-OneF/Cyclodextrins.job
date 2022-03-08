@@ -2,6 +2,7 @@
 #SBATCH -N 1
 #SBATCH -p RM-512
 #SBATCH -n 128
+#SBATCH --mem=512000
 #SBATCH -t 48:00:00
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=maihfly
