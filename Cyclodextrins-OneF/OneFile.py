@@ -67,7 +67,7 @@ print(f'gibbsE {P1.name} = {GibbsP1} Ha', flush=True)
 
 print('gibbs free energies printed', flush=True)
 
-DelGibbs = (GibbsR1 + GibbsE1) - (GibbsE2 + GibbsP1)
+DelGibbs = - (GibbsE2 + GibbsP1) - (GibbsR1 + GibbsE1)
 
 print('Gibbs Delta has been Acquired', flush=True)
 
